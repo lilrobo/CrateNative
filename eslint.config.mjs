@@ -56,6 +56,8 @@ export default [
       "@typescript-eslint/no-use-before-define": "warn",
       "@typescript-eslint/prefer-interface": "off",
       "@typescript-eslint/no-non-null-assertion": "warn",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
 
       "@typescript-eslint/no-unused-vars": [
         "warn",

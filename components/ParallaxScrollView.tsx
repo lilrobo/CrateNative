@@ -9,6 +9,22 @@ import Animated, {
 
 import {ThemedView} from "@/components/ThemedView"
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  header: {
+    height: 250,
+    overflow: "hidden",
+  },
+  content: {
+    flex: 1,
+    padding: 32,
+    gap: 16,
+    overflow: "hidden",
+  },
+})
+
 const HEADER_HEIGHT = 250
 
 type Props = PropsWithChildren<{
@@ -62,19 +78,3 @@ export default function ParallaxScrollView({
     </ThemedView>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  header: {
-    height: 250,
-    overflow: "hidden",
-  },
-  content: {
-    flex: 1,
-    padding: 32,
-    gap: 16,
-    overflow: "hidden",
-  },
-})

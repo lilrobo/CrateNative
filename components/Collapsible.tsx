@@ -6,6 +6,18 @@ import {ThemedText} from "@/components/ThemedText"
 import {ThemedView} from "@/components/ThemedView"
 import {Colors} from "@/constants/Colors"
 
+const styles = StyleSheet.create({
+  heading: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+  },
+  content: {
+    marginTop: 6,
+    marginLeft: 24,
+  },
+})
+
 export function Collapsible({
   children,
   title,
@@ -30,15 +42,3 @@ export function Collapsible({
     </ThemedView>
   )
 }
-
-const styles = StyleSheet.create({
-  heading: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-  },
-  content: {
-    marginTop: 6,
-    marginLeft: 24,
-  },
-})

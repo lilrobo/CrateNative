@@ -9,6 +9,14 @@ import Animated, {
 
 import {ThemedText} from "@/components/ThemedText"
 
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 28,
+    lineHeight: 32,
+    marginTop: -6,
+  },
+})
+
 export function HelloWave() {
   const rotationAnimation = useSharedValue(0)
 
@@ -30,11 +38,3 @@ export function HelloWave() {
     </Animated.View>
   )
 }
-
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 28,
-    lineHeight: 32,
-    marginTop: -6,
-  },
-})
